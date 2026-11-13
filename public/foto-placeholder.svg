@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" role="img" aria-label="Foto Hizby (placeholder)">
+  <rect width="600" height="800" fill="#d9d5c9"/>
+  <circle cx="300" cy="300" r="120" fill="#111"/>
+  <path d="M90 800c0-170 95-270 210-270s210 100 210 270z" fill="#111"/>
+  <text x="300" y="342" text-anchor="middle" font-family="Georgia, serif" font-size="120" fill="#eeebe3">H</text>
+</svg>
