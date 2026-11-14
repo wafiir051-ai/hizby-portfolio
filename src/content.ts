@@ -27,7 +27,7 @@ export const ABOUT = {
   heading: "Merancang web yang tidak cuma dibaca, tapi dirasakan.",
   body: [
     "Saya Hizby, murid kelas 11 jurusan Rekayasa Perangkat Lunak di SMKIT As-Syifa Boarding School, Subang. Di sela belajar di asrama, saya senang mengubah ide jadi web yang bisa disentuh: tampilannya rapi, geraknya halus, dan sesekali dibumbui elemen 3D.",
-    "Salah satu karya saya, Digital CAGEUR, mengajak orang mengecilkan jejak digital demi bumi. Bersama Muhammad Farel Alghifary dan Razan Arrafi Maulana, kami membawanya ke lomba desain website ITECNEFEST 2026 yang diadakan Universitas Mandiri dan meraih Juara Harapan 3. Saya masih terus belajar, dan targetnya sederhana: membuat setiap proyek lebih baik dari yang sebelumnya.",
+    "Salah satu karya saya, Digital CAGEUR, mengajak orang mengecilkan jejak digital demi bumi. Bersama Muhammad Farel Alghifary dan Razan Arrafi Maulana, kami membawanya ke lomba desain website ITECNEFEST 2026 yang diadakan Universitas Mandiri dan meraih Juara Harapan 1. Saya masih terus belajar, dan targetnya sederhana: membuat setiap proyek lebih baik dari yang sebelumnya.",
   ],
   facts: [
     { k: "Lokasi", v: "Subang, Jawa Barat" },
@@ -77,7 +77,7 @@ export const PROJECTS: {
     href: "https://prodirplsmkitassyifa.site",
     image: "/projects/digital-cageur-desktop.jpg",
     mobileImage: "/projects/digital-cageur-mobile.jpg",
-    award: "Juara Harapan 3 lomba desain website, ITECNEFEST 2026 Universitas Mandiri", // TODO: pastikan tahun 2026 dari sertifikat
+    award: "Juara Harapan 1 lomba desain website, ITECNEFEST 2026 Universitas Mandiri", // TODO: pastikan tahun 2026 dari sertifikat
     team: ["Hizby Fauzan 'Aisyi", "Muhammad Farel Alghifary", "Razan Arrafi Maulana"],
   },
   {
