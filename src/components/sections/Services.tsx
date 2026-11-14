@@ -1,4 +1,5 @@
 import LogoLoop from "@/components/LogoLoop";
+import MagicBento from "@/components/MagicBento";
 import { SERVICES, TECH } from "@/content";
 
 export default function Services() {
@@ -9,13 +10,20 @@ export default function Services() {
         <h2>Layanan</h2>
       </div>
       <div className="svc">
-        {SERVICES.map((s, i) => (
-          <article key={s.title}>
-            <span className="n">/{String(i + 1).padStart(2, "0")}</span>
-            <h3>{s.title}</h3>
-            <p>{s.desc}</p>
-          </article>
-        ))}
+        <MagicBento
+          items={SERVICES.map((s, i) => ({ id: i, label: "Layanan", title: s.title, description: s.desc }))}
+          columns={2}
+          rowHeight={190}
+          gap={12}
+          radius={0}
+          theme="dark"
+          glowColor="255, 77, 28"
+          enableStars
+          particleCount={10}
+          enableTilt
+          enableMagnetism
+          intro={false}
+        />
       </div>
       <div className="techstrip rv">
         <p className="label">Tech stack dari karya-karya saya</p>

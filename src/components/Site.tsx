@@ -111,6 +111,13 @@ export default function Site() {
     else el.scrollIntoView();
   }, []);
 
+  // tombol di dalam komponen (mis. kartu profil) meminta pindah bagian lewat event "goto"
+  useEffect(() => {
+    const on = (e: Event) => goTo((e as CustomEvent<string>).detail);
+    window.addEventListener("goto", on);
+    return () => window.removeEventListener("goto", on);
+  }, [goTo]);
+
   return (
     <>
       <div className="atmos" aria-hidden />

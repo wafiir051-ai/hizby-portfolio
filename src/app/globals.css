@@ -433,3 +433,18 @@ a.proj .ps::after { content: " ↗"; }
 .techstrip .label { margin: 0 0 1.1rem; font: 400 0.72rem var(--mono); text-transform: uppercase; letter-spacing: 0.1em; color: var(--faint); }
 .tech { display: inline-flex; align-items: center; gap: 2.4rem; font: 400 1.6rem/1 var(--serif); color: var(--fg); white-space: nowrap; }
 .tech::after { content: ""; width: 6px; height: 6px; background: var(--accent); }
+
+/* ProfileCard di Tentang & MagicBento di Layanan */
+.svc { display: block; border: 0; }
+.svc h3 { margin: 0; color: #f4f1e6; font: 400 1.9rem/1.1 var(--serif); }
+.svc p { max-width: none; color: rgba(244, 241, 230, 0.72); }
+.svc span, .svc [class*="label"] { color: rgba(244, 241, 230, 0.6); }
+
+/* kartu profil di pojok sidebar (desktop); header ringkas di ponsel */
+.side-card__inner { width: 300px; max-width: 100%; }
+.side-compact { display: none; }
+@media (max-width: 900px) {
+  .side-card { display: none; }
+  .side-compact { display: contents; }
+}
+@media (min-width: 901px) and (max-height: 700px) { .side-card__inner { width: 240px; } }

@@ -4,8 +4,8 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import DecryptedText from "@/components/DecryptedText";
 import { SKILLS } from "@/content";
 
-// Tombol keyboard untuk tiap skill (maksimal 12 skill, urutan sama dengan SKILLS).
-const KEYS = ["q", "w", "e", "r", "a", "s", "d", "f", "z", "x", "c", "v"];
+// Tombol keyboard untuk tiap skill: baris angka (1-9, 0, -, =) = skill 1 sampai 12, urutan sama dengan SKILLS.
+const KEYS = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "-", "="];
 const TONES = ["l", "m", "d"];
 
 export default function Skills() {
@@ -63,7 +63,7 @@ export default function Skills() {
       </div>
       <div className="skills rv">
         <div className="quip pop" aria-live="polite" key={tick}>
-          <small>(keyboard ini main sendiri saat kamu menggulir. Tekan Q W E R / A S D F / Z X C V untuk mengambil alih)</small>
+          <small>(keyboard ini main sendiri saat kamu menggulir. Ambil alih dengan menekan 1 sampai 9, lalu 0, - dan = untuk skill 10, 11, 12)</small>
           <b>{cur ? <DecryptedText text={cur.name} animateOn="view" speed={40} sequential revealDirection="start" /> : "Skill"}</b>
           <p>{cur ? cur.note : "Gulir pelan, atau tekan tombol di keyboard kamu, atau klik salah satu keycap."}</p>
         </div>

@@ -86,10 +86,10 @@ export function initScrollScore() {
   }
 
   /* ---------- 5. LAYANAN: reveal clip-path dari tepi ---------- */
-  const dirs = ["inset(0 100% 0 0)", "inset(0 0 100% 0)", "inset(0 0 0 100%)", "inset(100% 0 0 0)"];
-  all<HTMLElement>("#layanan .svc article").forEach((a, i) => {
-    gsap.fromTo(a, { clipPath: dirs[i % 4] }, { clipPath: "inset(0% 0% 0% 0%)", ease: "none", scrollTrigger: { trigger: a, start: "top 92%", end: "top 55%", scrub: true } });
-  });
+  const svc = q<HTMLElement>("#layanan .svc");
+  if (svc) {
+    gsap.fromTo(svc, { clipPath: "inset(0 100% 0 0)" }, { clipPath: "inset(0% 0% 0% 0%)", ease: "none", scrollTrigger: { trigger: svc, start: "top 92%", end: "top 45%", scrub: true } });
+  }
 
   /* ---------- 6. KONTAK: kinetic ---------- */
   const h2 = q<HTMLElement>(".contact-grid h2");

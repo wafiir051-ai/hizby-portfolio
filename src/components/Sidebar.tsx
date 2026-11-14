@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import SideCard from "@/components/SideCard";
 import { PROFILE, SECTIONS } from "@/content";
 
 export default function Sidebar({ active, goTo }: { active: string; goTo: (id: string) => void }) {
@@ -35,15 +36,23 @@ export default function Sidebar({ active, goTo }: { active: string; goTo: (id: s
   return (
     <aside className="side">
       <div className="side-body">
-        <figure className="portrait">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={PROFILE.photo} alt={`Foto ${PROFILE.name}`} width={914} height={1280} />
-        </figure>
-        <h1 className="name">{PROFILE.name}</h1>
-        <p className="role">
-          <span>{role}</span>
-          <i className="caret" aria-hidden />
-        </p>
+        <h1 className="sr-only">
+          {PROFILE.name}, {PROFILE.role}
+        </h1>
+        {/* desktop: kartu profil holografik di pojok kiri atas */}
+        <SideCard title={role} />
+        {/* ponsel: header ringkas */}
+        <div className="side-compact">
+          <figure className="portrait">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={PROFILE.photo} alt={`Foto ${PROFILE.name}`} width={914} height={1280} />
+          </figure>
+          <p className="name">{PROFILE.name}</p>
+          <p className="role">
+            <span>{role}</span>
+            <i className="caret" aria-hidden />
+          </p>
+        </div>
         <nav className="menu" aria-label="Navigasi utama">
           {SECTIONS.map((s, i) => (
             <a
