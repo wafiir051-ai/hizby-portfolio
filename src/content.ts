@@ -54,7 +54,7 @@ export const SKILLS: { name: string; note: string }[] = [
 ];
 
 /** Tech stack yang terbukti dari karya Hizby (Digital CAGEUR, Master Dashboard, Lombaku, e-commerce Flutter). */
-export const TECH = ["Next.js", "React", "Three.js", "React Three Fiber", "WebGL", "GSAP", "Tailwind CSS", "Vite", "Firebase", "Flutter", "Figma"];
+export const TECH = ["Next.js", "React", "Three.js", "React Three Fiber", "Tailwind CSS", "Vite", "Firebase", "Flutter", "Figma"];
 
 export const PROJECTS: {
   kind: string;
