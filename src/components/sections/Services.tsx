@@ -1,4 +1,5 @@
-import { SERVICES } from "@/content";
+import LogoLoop from "@/components/LogoLoop";
+import { SERVICES, TECH } from "@/content";
 
 export default function Services() {
   return (
@@ -15,6 +16,19 @@ export default function Services() {
             <p>{s.desc}</p>
           </article>
         ))}
+      </div>
+      <div className="techstrip rv">
+        <p className="label">Tech stack dari karya-karya saya</p>
+        <LogoLoop
+          logos={TECH.map((t) => ({ node: <span className="tech">{t}</span>, title: t, ariaLabel: t }))}
+          speed={55}
+          gap={48}
+          logoHeight={34}
+          width="100%"
+          fadeOut
+          fadeOutColor="#eeebe3"
+          pauseOnHover
+        />
       </div>
     </section>
   );

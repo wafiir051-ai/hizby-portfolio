@@ -37,7 +37,7 @@ export default function Sidebar({ active, goTo }: { active: string; goTo: (id: s
       <div className="side-body">
         <figure className="portrait">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={PROFILE.photo} alt={`Foto ${PROFILE.name}`} width={900} height={1200} />
+          <img src={PROFILE.photo} alt={`Foto ${PROFILE.name}`} width={914} height={1280} />
         </figure>
         <h1 className="name">{PROFILE.name}</h1>
         <p className="role">

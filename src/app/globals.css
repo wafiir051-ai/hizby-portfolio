@@ -427,3 +427,9 @@ a.proj .ps::after { content: " ↗"; }
 .pan__proj:hover .phone[data-i="2"] { transform: translateX(-8%) rotate(8deg) scale(0.96); }
 @media (max-width: 640px) { .phone { width: 6.4rem; } }
 @media (prefers-reduced-motion: reduce) { .phone { transition: none; } }
+
+/* React Bits: tech stack LogoLoop */
+.techstrip { margin-top: 3.5rem; padding-top: 1.6rem; border-top: 1px solid var(--line); }
+.techstrip .label { margin: 0 0 1.1rem; font: 400 0.72rem var(--mono); text-transform: uppercase; letter-spacing: 0.1em; color: var(--faint); }
+.tech { display: inline-flex; align-items: center; gap: 2.4rem; font: 400 1.6rem/1 var(--serif); color: var(--fg); white-space: nowrap; }
+.tech::after { content: ""; width: 6px; height: 6px; background: var(--accent); }

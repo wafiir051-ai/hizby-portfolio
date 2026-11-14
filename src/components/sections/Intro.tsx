@@ -1,11 +1,14 @@
 import SplitText from "@/components/SplitText";
 import Magnet from "@/components/Magnet";
+import ShinyText from "@/components/ShinyText";
 import { INTRO, PROFILE } from "@/content";
 
 export default function Intro({ ready, goTo }: { ready: boolean; goTo: (id: string) => void }) {
   return (
     <section id="intro" className="block intro" data-section data-shape="1" data-x="3.2" data-dim="0.55" aria-label="Intro">
-      <p className="tag">Selamat datang di portofolio saya</p>
+      <p className="tag">
+        <ShinyText text="Selamat datang di portofolio saya" color="#4f4d47" shineColor="#111111" speed={4} />
+      </p>
       <div className="intro__stage">
         <div data-cue>
           {ready ? (

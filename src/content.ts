@@ -7,9 +7,9 @@
 export const PROFILE = {
   name: "Hizby Fauzan 'Aisyi",
   short: "Hizby",
-  role: "Creative Developer", // TODO: peran asli
+  role: "Full Stack & Mobile Developer",
   intro: "Saya membuat antarmuka yang bergerak, bereaksi, dan terasa hidup.", // TODO
-  roles: ["Creative Developer"], // TODO: boleh lebih dari satu, nanti berganti dengan efek ketik
+  roles: ["Full Stack Developer", "Mobile Developer"], // berganti dengan efek ketik di sidebar
   photo: "/foto-hizby.webp", // foto asli Hizby (public/foto-hizby.webp)
   year: 2026,
   github: "https://github.com/Aisyi-Hizby", // akun GitHub Hizby (cocokkan dengan Hizby)
@@ -26,7 +26,7 @@ export const INTRO = {
 export const ABOUT = {
   heading: "Merancang web yang tidak cuma dibaca, tapi dirasakan.",
   body: [
-    "Saya Hizby, murid kelas 11 jurusan Rekayasa Perangkat Lunak di SMKIT As-Syifa Boarding School, Subang. Di sela belajar di asrama, saya senang mengubah ide jadi web yang bisa disentuh: tampilannya rapi, geraknya halus, dan sesekali dibumbui elemen 3D.",
+    "Saya Hizby, murid kelas 11 jurusan Rekayasa Perangkat Lunak di SMKIT As-Syifa Boarding School, Subang. Saya mengerjakan web dan aplikasi mobile, dari tampilan sampai server (full stack), dan senang mengubah ide jadi pengalaman yang bisa disentuh: geraknya halus dengan GSAP dan sesekali dibumbui 3D lewat WebGL.",
     "Salah satu karya saya, Digital CAGEUR, mengajak orang mengecilkan jejak digital demi bumi. Bersama Muhammad Farel Alghifary dan Razan Arrafi Maulana, kami membawanya ke lomba desain website ITECNEFEST 2026 yang diadakan Universitas Mandiri dan meraih Juara Harapan 1. Saya masih terus belajar, dan targetnya sederhana: membuat setiap proyek lebih baik dari yang sebelumnya.",
   ],
   facts: [
@@ -38,20 +38,23 @@ export const ABOUT = {
 };
 
 export const SKILLS: { name: string; note: string }[] = [
-  // TODO: sesuaikan dengan keahlian asli. `note` = kalimat singkat/lucu yang muncul saat diklik.
+  // Berdasarkan karya dan keahlian yang disebut Hizby. `note` = kalimat singkat yang muncul saat diklik.
   { name: "React", note: "Memecah layar jadi potongan kecil yang rukun." },
   { name: "Next.js", note: "Dari halaman kosong sampai situs yang siap tayang." },
   { name: "Three.js", note: "Membuat browser mengira dirinya mesin game." },
   { name: "WebGL", note: "Berbicara langsung dengan GPU, tanpa basa-basi." },
   { name: "GSAP", note: "Gerak yang terasa pas, bukan sekadar bergerak." },
-  { name: "TypeScript", note: "Kesalahan ketahuan sebelum pengunjung yang tahu." },
   { name: "Tailwind CSS", note: "Gaya yang konsisten tanpa pindah file." },
-  { name: "UI / UX", note: "Dari sketsa kasar sampai layar yang enak dipakai." },
+  { name: "Firebase", note: "Backend siap pakai, tinggal dihubungkan." },
+  { name: "Flutter", note: "Satu basis kode untuk aplikasi di ponsel." },
   { name: "Figma", note: "Semua rapi di kanvas sebelum jadi kode." },
-  { name: "Git", note: "Mesin waktu untuk kode yang salah ketik." },
-  { name: "Node.js", note: "Sisi belakang yang bekerja tanpa banyak bicara." },
-  { name: "Responsive", note: "Satu desain, dari jam tangan sampai monitor lebar." },
+  { name: "UI / UX", note: "Dari sketsa kasar sampai layar yang enak dipakai." },
+  { name: "Full Stack", note: "Dari tampilan sampai server, satu tangan." },
+  { name: "Mobile Dev", note: "Aplikasi yang muat di saku." },
 ];
+
+/** Tech stack yang terbukti dari karya Hizby (Digital CAGEUR, Master Dashboard, Lombaku, e-commerce Flutter). */
+export const TECH = ["Next.js", "React", "Three.js", "React Three Fiber", "WebGL", "GSAP", "Tailwind CSS", "Vite", "Firebase", "Flutter", "Figma"];
 
 export const PROJECTS: {
   kind: string;
@@ -105,7 +108,7 @@ export const PROJECTS: {
 export const SERVICES: { title: string; front: string; desc: string }[] = [
   // TODO: sesuaikan layanan asli
   { title: "Website Portofolio", front: "Etalase yang bikin orang ingat.", desc: "Situs pribadi atau brand dengan identitas yang jelas dan animasi secukupnya." },
-  { title: "Landing Page", front: "Satu halaman, satu tujuan.", desc: "Halaman yang cepat dibuka dan mengarahkan pengunjung ke satu tindakan." },
+  { title: "Aplikasi Mobile", front: "Dari rancangan ke ponsel.", desc: "Aplikasi ponsel dengan antarmuka rapi, dari rancangan di Figma sampai bisa dijalankan." },
   { title: "Pengalaman 3D", front: "Web yang bisa disentuh.", desc: "Elemen 3D interaktif di browser: produk, visual, atau halaman bercerita." },
   { title: "Aplikasi Web", front: "Dari ide ke produk jalan.", desc: "Aplikasi dengan antarmuka rapi, dibangun bertahap dan mudah dirawat." },
 ];
