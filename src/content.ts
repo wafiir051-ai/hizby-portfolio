@@ -26,7 +26,7 @@ export const INTRO = {
 export const ABOUT = {
   heading: "Merancang web yang tidak cuma dibaca, tapi dirasakan.",
   body: [
-    "Saya Hizby, murid kelas 11 jurusan Rekayasa Perangkat Lunak di SMKIT As-Syifa Boarding School, Subang. Saya mengerjakan web dan aplikasi mobile, dari tampilan sampai server (full stack), dan senang mengubah ide jadi pengalaman yang bisa disentuh: geraknya halus dengan GSAP dan sesekali dibumbui 3D lewat WebGL.",
+    "Saya Hizby, murid kelas 11 jurusan Rekayasa Perangkat Lunak di SMKIT As-Syifa Boarding School, Subang. Saya mengerjakan web dan aplikasi mobile, dari tampilan sampai server (full stack), dan senang mengubah ide jadi pengalaman yang bisa disentuh: geraknya halus dan sesekali dibumbui elemen 3D.",
     "Salah satu karya saya, Digital CAGEUR, mengajak orang mengecilkan jejak digital demi bumi. Bersama Muhammad Farel Alghifary dan Razan Arrafi Maulana, kami membawanya ke lomba desain website ITECNEFEST 2026 yang diadakan Universitas Mandiri dan meraih Juara Harapan 1. Saya masih terus belajar, dan targetnya sederhana: membuat setiap proyek lebih baik dari yang sebelumnya.",
   ],
   facts: [
@@ -42,8 +42,8 @@ export const SKILLS: { name: string; note: string }[] = [
   { name: "React", note: "Memecah layar jadi potongan kecil yang rukun." },
   { name: "Next.js", note: "Dari halaman kosong sampai situs yang siap tayang." },
   { name: "Three.js", note: "Membuat browser mengira dirinya mesin game." },
-  { name: "WebGL", note: "Berbicara langsung dengan GPU, tanpa basa-basi." },
-  { name: "GSAP", note: "Gerak yang terasa pas, bukan sekadar bergerak." },
+  { name: "JavaScript", note: "Bahasa serba bisa di balik hampir semua web." },
+  { name: "Dart", note: "Bahasa di balik aplikasi Flutter." },
   { name: "Tailwind CSS", note: "Gaya yang konsisten tanpa pindah file." },
   { name: "Firebase", note: "Backend siap pakai, tinggal dihubungkan." },
   { name: "Flutter", note: "Satu basis kode untuk aplikasi di ponsel." },
